@@ -1,8 +1,12 @@
 # main.py
+def add_two(a: int, b: int) -> int:
+    return a + b
+
+
 def main():
     """add two number"""
     a, b = map(int, input().split())
-    res = a + b
+    res = add_two(a, b)
     print(res)
 
 
